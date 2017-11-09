@@ -38,5 +38,6 @@ group :production do
   gem 'pg'
 end
 group :test do
+  gem 'rspec'
   gem 'minitest-spec-rails'
 end
