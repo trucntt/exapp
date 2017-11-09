@@ -62,10 +62,10 @@ workflows:
  version: 2
  build-deploy:
    jobs:
-     - build
+     - build-job
      - deploy-job::workflows
          requires:
-           - build
+           - build-job
          filters:
            branches:
              only: master
