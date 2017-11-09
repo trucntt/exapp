@@ -41,7 +41,7 @@ jobs:
       - run: bundle exec rake db:schema:load
 
   deploy-job:
-    docker::workflows
+    docker:
       - image: my-image
     working_directory: /tmp/my-project
     steps:
